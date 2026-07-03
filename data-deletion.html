@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold Focus — Hesap ve Veri Silme</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0d1117; color:#e6edf3; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.65; }
+  main { max-width:760px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:1.7rem; margin:0 0 6px; }
+  h2 { font-size:1.15rem; margin:34px 0 10px; color:#5BC7E0; }
+  h3 { font-size:1rem; margin:20px 0 6px; }
+  p, li { color:#c3ccd6; }
+  a { color:#5BC7E0; }
+  .meta { color:#8b949e; font-size:.9rem; margin-bottom:28px; }
+  .note { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:14px 16px; margin:18px 0; font-size:.92rem; }
+  ol li { margin:6px 0; }
+  hr { border:none; border-top:1px solid #21262d; margin:36px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hesap ve Veri Silme Talebi</h1>
+  <p class="meta">Cold Focus mobil uygulaması · Son güncelleme: 3 Temmuz 2026</p>
+
+  <p>Bu sayfa, <strong>Cold Focus</strong> uygulamasındaki hesabınızı ve ilgili verilerinizi
+  nasıl sileceğinizi açıklar. Cold Focus, geliştirici
+  <strong>Hasan Burak Erdin (Coldfocusapp)</strong> tarafından sunulur.</p>
+
+  <div class="note">
+    <strong>Kısaca:</strong> Cold Focus <em>offline-first</em> bir uygulamadır ve verilerinizin
+    çoğu yalnızca cihazınızda durur. Uygulamayı kaldırmanız cihazdaki tüm yerel verileri siler.
+    Bulut senkronizasyonunu kullandıysanız, sunucudaki verilerinizi de aşağıdaki yollarla
+    silebilirsiniz.
+  </div>
+
+  <h2>1. Cihazdaki (yerel) verileri silme</h2>
+  <p>Odak seansı kayıtları, ilerleme durumu ve tercihleriniz öncelikle cihazınızda tutulur.
+  Bunları silmek için:</p>
+  <ol>
+    <li>Uygulamayı telefonunuzdan <strong>kaldırın (uninstall)</strong>, veya</li>
+    <li>Android <strong>Ayarlar → Uygulamalar → Cold Focus → Depolama → Verileri Temizle</strong>
+      adımlarını izleyin.</li>
+  </ol>
+  <p>Bu işlem cihazdaki tüm yerel verileri kalıcı olarak siler.</p>
+
+  <h2>2. Bulut hesabını ve sunucu verilerini silme</h2>
+  <p>Bulut senkronizasyonunu etkinleştirdiyseniz, sunucularımızda (Supabase) tutulan anonim hesap
+  kimliğiniz, seans özetleriniz ve profil bilginiz için silme talebinde bulunabilirsiniz.</p>
+
+  <h3>Nasıl talep edersiniz</h3>
+  <p><strong>coldfocusapp@gmail.com</strong> adresine, e-postanın konusuna
+  <strong>“Hesap Silme”</strong> yazarak bir mesaj gönderin. Talebinizi doğrulayabilmemiz için,
+  mümkünse hesabınızı bağladığınız <strong>Google / Apple e-posta adresinizden</strong> yazın
+  veya uygulama içi <strong>Ayarlar</strong> ekranında görünen hesap kimliğinizi ekleyin.</p>
+  <p style="margin-top:10px">
+    <a href="mailto:coldfocusapp@gmail.com?subject=Hesap%20Silme&amp;body=Cold%20Focus%20hesab%C4%B1m%C4%B1n%20ve%20bulut%20verilerimin%20silinmesini%20talep%20ediyorum.">
+      → Silme talebi e-postası oluştur</a>
+  </p>
+
+  <h2>3. Hangi veriler silinir</h2>
+  <ul>
+    <li>Anonim hesap kimliğiniz.</li>
+    <li>Odak seansı özetleriniz (süre, sonuç, zorluk, ihlal sayısı, yerel tarih/saat).</li>
+    <li>Profil bilginiz (premium durumu, saat dilimi, kimlik seviyesi, seri, bildirim jetonu).</li>
+  </ul>
+  <p><strong>Not:</strong> Aktif bir <strong>abonelik</strong>, ilgili mağaza (Google Play /
+  App Store) tarafından yönetilir; hesap silme aboneliği otomatik iptal etmez. Aboneliğinizi
+  mağazanın abonelik ayarlarından ayrıca iptal etmelisiniz. Ayrıca yasal yükümlülükler gereği
+  bazı işlem/ödeme kayıtları ilgili mağaza tarafında saklanabilir.</p>
+
+  <h2>4. Süre</h2>
+  <p>Talebinizi aldıktan sonra kimliğinizi doğrular ve bulut verilerinizi <strong>en geç 30 gün
+  içinde</strong> sileriz. Güvenlik amacıyla tutulan ve IP içeren kimlik doğrulama günlükleri
+  zaten <strong>30 gün içinde otomatik olarak silinir.</strong></p>
+
+  <h2>5. İletişim</h2>
+  <p>Sorularınız için: <a href="mailto:coldfocusapp@gmail.com">coldfocusapp@gmail.com</a><br>
+  Ayrıca <a href="privacy-policy.html">Gizlilik Politikası</a> ve
+  <a href="terms-of-service.html">Kullanım Şartları</a> sayfalarına bakabilirsiniz.</p>
+
+  <hr>
+  <p class="meta">© 2026 Coldfocusapp. Tüm hakları saklıdır.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold Focus — Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0d1117; color:#e6edf3; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.65; }
+  main { max-width:760px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:1.7rem; margin:0 0 6px; }
+  h2 { font-size:1.15rem; margin:34px 0 10px; color:#5BC7E0; }
+  h3 { font-size:1rem; margin:20px 0 6px; }
+  p, li { color:#c3ccd6; }
+  a { color:#5BC7E0; }
+  .meta { color:#8b949e; font-size:.9rem; margin-bottom:28px; }
+  .note { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:14px 16px; margin:18px 0; font-size:.92rem; }
+  code { background:#161b22; padding:1px 6px; border-radius:5px; }
+  hr { border:none; border-top:1px solid #21262d; margin:36px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">Cold Focus mobil uygulaması · Son güncelleme: 3 Temmuz 2026</p>
+
+  <p>Bu Gizlilik Politikası, <strong>Cold Focus</strong> uygulamasının ("Uygulama", "biz")
+  kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar. Uygulamayı
+  kullanarak bu politikayı kabul etmiş olursunuz. Cold Focus, geliştirici
+  <strong>Hasan Burak Erdin (Coldfocusapp)</strong> tarafından sunulmaktadır.</p>
+
+  <div class="note">
+    <strong>Özet:</strong> Cold Focus <em>offline-first</em> bir odak uygulamasıdır. Temel
+    işlevler internet olmadan çalışır. Bulut senkronizasyonu <strong>isteğe bağlıdır</strong>
+    ve varsayılan olarak kapalıdır. Reklam göstermeyiz, verilerinizi satmayız. Diğer
+    uygulamalarınızın <em>içeriğini</em> okumayız.
+  </div>
+
+  <h2>1. Topladığımız Veriler</h2>
+
+  <h3>a) Cihazda saklanan (yerel) veriler</h3>
+  <ul>
+    <li><strong>Odak seansı kayıtları:</strong> seans süresi, sonucu (tamamlandı/iptal/ihlal),
+      zorluk seviyesi, tarih ve saat.</li>
+    <li><strong>İlerleme durumu:</strong> kimlik seviyesi, seri (streak), kurtarma hakkı.</li>
+    <li><strong>Tercihleriniz:</strong> seçtiğiniz kilitlenecek uygulamaların listesi, ton/tavır
+      seçimi, zorluk ve süre tercihleri.</li>
+  </ul>
+  <p>Bu veriler öncelikle cihazınızda tutulur ve uygulamanın çalışması için gereklidir.</p>
+
+  <h3>b) Bulut ile senkronize edilen veriler (yalnızca senkron açıksa)</h3>
+  <p>Bulut senkronizasyonunu etkinleştirirseniz aşağıdaki veriler güvenli sunucularımızda
+  (Supabase) saklanır:</p>
+  <ul>
+    <li>Anonim hesap kimliği (aşağıya bakınız).</li>
+    <li>Odak seansı özetleri (süre, sonuç, zorluk, ihlal sayısı, yerel tarih/saat).</li>
+    <li>Profil bilgisi: premium durumu, saat dilimi, kimlik seviyesi, seri, bildirim jetonu.</li>
+  </ul>
+  <p>Bu verilerin hiçbiri adınızı, telefon numaranızı veya mesaj içeriğinizi içermez.</p>
+
+  <h3>c) Hesap ve kimlik doğrulama</h3>
+  <ul>
+    <li><strong>Anonim giriş:</strong> Bulut özelliklerini kullanmak için otomatik, isimsiz bir
+      hesap oluşturulur. Kişisel bilgi istemez.</li>
+    <li><strong>Google / Apple ile giriş (isteğe bağlı):</strong> Premium aboneliğinizin cihazlar
+      arasında taşınması ve geri yüklenmesi için hesabınızı Google veya Apple kimliğinizle
+      bağlayabilirsiniz. Bu durumda ilgili sağlayıcıdan e-posta adresiniz ve bir kullanıcı
+      kimliği alınır.</li>
+  </ul>
+
+  <h3>d) Otomatik toplanan teknik veriler</h3>
+  <ul>
+    <li><strong>IP adresi:</strong> Giriş güvenliği için kimlik doğrulama günlüklerinde geçici
+      olarak tutulur ve <strong>30 gün içinde otomatik silinir.</strong></li>
+  </ul>
+
+  <h2>2. Cihaz İzinleri ve Kullanım Amaçları</h2>
+  <p>Cold Focus, odak-kilit özelliğini sağlamak için bazı Android izinleri ister. İzinleri
+  yalnızca aşağıdaki amaçlarla kullanırız:</p>
+  <ul>
+    <li><strong>Uygulama Kullanımına Erişim (PACKAGE_USAGE_STATS):</strong> Seans sırasında
+      hangi uygulamanın ön planda olduğunu <em>cihazda</em> algılayıp, sizin seçtiğiniz dikkat
+      dağıtıcı uygulamaları kilitlemek için. Bu bilgi <strong>cihazdan dışarı gönderilmez.</strong></li>
+    <li><strong>Diğer Uygulamaların Üzerinde Gösterme (SYSTEM_ALERT_WINDOW):</strong> Kilitli bir
+      uygulamayı açmaya çalıştığınızda engelleme ekranını göstermek için.</li>
+    <li><strong>Ön Plan Servisi & Bildirimler:</strong> Aktif seansı/kilidi sürdürmek ve size
+      hatırlatma göstermek için.</li>
+    <li><strong>Hareket Sensörü (ivmeölçer/jiroskop):</strong> Telefonu bırakıp bırakmadığınızı
+      algılamak için. Bu veri yalnızca cihazda işlenir, saklanmaz ve gönderilmez.</li>
+  </ul>
+  <p>Diğer uygulamalarınızın içeriğini, mesajlarınızı veya kişisel dosyalarınızı
+  <strong>okumayız.</strong></p>
+
+  <h2>3. Yapay Zeka ile Üretilen İçerik (Premium)</h2>
+  <p>Premium abonelikte; kişisel odak analizi, odak planı ve gün sonu özeti gibi metinler
+  yapay zeka ile üretilir. Bu özellik için:</p>
+  <ul>
+    <li>Ham verileriniz değil, <strong>hesaplanmış özet istatistikler</strong> (ör. toplam odak
+      süresi, seans sıklığı, eğilim) işlenmek üzere yapay zeka sağlayıcımız
+      <strong>Anthropic (Claude)</strong>'a iletilir.</li>
+    <li>Gönderilen veriler adınızı veya kimliğinizi içermez.</li>
+    <li>Anthropic bu verileri yalnızca yanıtı üretmek için işler; model eğitimi için kullanılmaz.</li>
+  </ul>
+
+  <h2>4. Ödemeler</h2>
+  <p>Premium abonelikler <strong>Google Play</strong> (ve ileride Apple App Store) üzerinden,
+  abonelik altyapımız <strong>RevenueCat</strong> aracılığıyla işlenir. Kredi kartı / ödeme
+  bilgilerinizi <strong>biz görmeyiz ve saklamayız</strong>; bunlar ilgili mağaza tarafından
+  işlenir. Yalnızca aboneliğinizin aktif olup olmadığı bilgisini alırız.</p>
+
+  <h2>5. Üçüncü Taraf Hizmetler</h2>
+  <ul>
+    <li><strong>Supabase</strong> — bulut veritabanı, kimlik doğrulama ve senkronizasyon.</li>
+    <li><strong>Anthropic</strong> — premium yapay zeka metinleri.</li>
+    <li><strong>Google Play / RevenueCat</strong> — abonelik ve ödeme işleme.</li>
+    <li><strong>Expo</strong> — bildirim gönderimi (push) altyapısı.</li>
+  </ul>
+  <p>Her sağlayıcı kendi gizlilik politikasına tabidir.</p>
+
+  <h2>6. Verilerin Saklanması ve Silinmesi</h2>
+  <p>Verilerinizi hizmeti sunmak için gerekli olduğu sürece saklarız. IP içeren giriş günlükleri
+  30 gün sonra silinir. Hesabınızın ve bulut verilerinizin silinmesini talep edebilirsiniz;
+  bunun nasıl yapılacağı <a href="data-deletion.html">Hesap ve Veri Silme</a> sayfasında
+  açıklanmıştır. Uygulamayı kaldırmanız cihazdaki yerel verileri siler.</p>
+
+  <h2>7. Haklarınız (KVKK / GDPR)</h2>
+  <p>Yürürlükteki mevzuata göre; verilerinize erişme, düzeltilmesini veya silinmesini isteme,
+  işlemeye itiraz etme ve verilerinizin bir kopyasını alma haklarına sahipsiniz. Bu hakları
+  kullanmak için bizimle iletişime geçin.</p>
+
+  <h2>8. Çocukların Gizliliği</h2>
+  <p>Cold Focus 13 yaşın altındaki çocuklara yönelik değildir ve bilerek bu yaş grubundan veri
+  toplamayız.</p>
+
+  <h2>9. Güvenlik</h2>
+  <p>Verileri şifreli bağlantılar (HTTPS) üzerinden iletir ve erişim kontrolleriyle koruruz.
+  Hiçbir yöntem %100 güvenli olmasa da verilerinizi korumak için makul önlemleri alırız.</p>
+
+  <h2>10. Değişiklikler</h2>
+  <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikleri uygulama içinde veya bu
+  sayfada duyururuz. Güncel sürüm her zaman bu adreste yayınlanır.</p>
+
+  <h2>11. İletişim</h2>
+  <p>Sorularınız veya talepleriniz için:
+    <a href="mailto:coldfocusapp@gmail.com">coldfocusapp@gmail.com</a></p>
+
+  <hr>
+  <p class="meta">© 2026 Coldfocusapp. Tüm hakları saklıdır.</p>
+</main>
+</body>
+</html>
