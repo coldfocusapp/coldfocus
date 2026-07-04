@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold Focus — Privacy Policy</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0d1117; color:#e6edf3; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.65; }
+  main { max-width:760px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:1.7rem; margin:0 0 6px; }
+  h2 { font-size:1.15rem; margin:34px 0 10px; color:#5BC7E0; }
+  h3 { font-size:1rem; margin:20px 0 6px; }
+  p, li { color:#c3ccd6; }
+  a { color:#5BC7E0; }
+  .meta { color:#8b949e; font-size:.9rem; margin-bottom:28px; }
+  .note { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:14px 16px; margin:18px 0; font-size:.92rem; }
+  code { background:#161b22; padding:1px 6px; border-radius:5px; }
+  hr { border:none; border-top:1px solid #21262d; margin:36px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Cold Focus mobile app · Last updated: July 3, 2026</p>
+
+  <p>This Privacy Policy explains how the <strong>Cold Focus</strong> app ("the App", "we")
+  collects, uses and protects your personal data. By using the App, you accept this policy.
+  Cold Focus is provided by the developer <strong>Hasan Burak Erdin (Coldfocusapp)</strong>.</p>
+
+  <div class="note">
+    <strong>Summary:</strong> Cold Focus is an <em>offline-first</em> focus app. Core features
+    work without an internet connection. Cloud sync is <strong>optional</strong> and off by
+    default. We do not show ads and we do not sell your data. We do not read the
+    <em>content</em> of your other apps.
+  </div>
+
+  <h2>1. Data We Collect</h2>
+
+  <h3>a) Data stored on your device (local)</h3>
+  <ul>
+    <li><strong>Focus session records:</strong> session length, outcome (completed / cancelled /
+      violated), difficulty level, date and time.</li>
+    <li><strong>Progress state:</strong> identity level, streak, recovery credit.</li>
+    <li><strong>Your preferences:</strong> the list of apps you chose to lock, your tone selection,
+      and your difficulty and duration preferences.</li>
+  </ul>
+  <p>This data is kept primarily on your device and is required for the App to function.</p>
+
+  <h3>b) Data synced to the cloud (only if sync is on)</h3>
+  <p>If you enable cloud sync, the following data is stored on our secure servers (Supabase):</p>
+  <ul>
+    <li>An anonymous account identifier (see below).</li>
+    <li>Focus session summaries (length, outcome, difficulty, violation count, local date/time).</li>
+    <li>Profile information: premium status, time zone, identity level, streak, notification token.</li>
+  </ul>
+  <p>None of this data includes your name, phone number or message content.</p>
+
+  <h3>c) Account and authentication</h3>
+  <ul>
+    <li><strong>Anonymous sign-in:</strong> to use cloud features, an automatic, nameless account
+      is created. It asks for no personal information.</li>
+    <li><strong>Sign in with Google / Apple (optional):</strong> to carry and restore your premium
+      subscription across devices, you can link your account with your Google or Apple identity.
+      In that case, your email address and a user identifier are received from that provider.</li>
+  </ul>
+
+  <h3>d) Automatically collected technical data</h3>
+  <ul>
+    <li><strong>IP address:</strong> kept temporarily in authentication logs for sign-in security
+      and <strong>automatically deleted within 30 days.</strong></li>
+  </ul>
+
+  <h2>2. Device Permissions and Their Purposes</h2>
+  <p>Cold Focus requests certain Android permissions to provide its focus-lock feature. We use
+  these permissions only for the following purposes:</p>
+  <ul>
+    <li><strong>Usage Access (PACKAGE_USAGE_STATS):</strong> to detect <em>on the device</em> which
+      app is in the foreground during a session, so we can lock the distracting apps you selected.
+      This information is <strong>never sent off the device.</strong></li>
+    <li><strong>Display Over Other Apps (SYSTEM_ALERT_WINDOW):</strong> to show the blocking screen
+      when you try to open a locked app.</li>
+    <li><strong>Foreground Service &amp; Notifications:</strong> to keep an active session/lock
+      running and to show you reminders.</li>
+    <li><strong>Motion Sensors (accelerometer/gyroscope):</strong> to detect whether you have put
+      the phone down. This data is processed on the device only; it is not stored or sent.</li>
+  </ul>
+  <p>We do <strong>not</strong> read the content, messages or personal files of your other apps.</p>
+
+  <h2>3. AI-Generated Content (Premium)</h2>
+  <p>With a premium subscription, texts such as your personal focus analysis, focus plan and
+  end-of-day summary are generated with AI. For this feature:</p>
+  <ul>
+    <li>Not your raw data, but <strong>computed summary statistics</strong> (e.g. total focus time,
+      session frequency, trend) are sent to our AI provider <strong>Anthropic (Claude)</strong>
+      to be processed.</li>
+    <li>The data sent does not include your name or identity.</li>
+    <li>Anthropic processes this data only to generate the response; it is not used to train models.</li>
+  </ul>
+
+  <h2>4. Payments</h2>
+  <p>Premium subscriptions are processed through <strong>Google Play</strong> (and, in the future,
+  the Apple App Store), with our subscription infrastructure provided via <strong>RevenueCat</strong>.
+  We <strong>do not see or store</strong> your credit card / payment details; these are handled by
+  the relevant store. We only receive information about whether your subscription is active.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <ul>
+    <li><strong>Supabase</strong> — cloud database, authentication and synchronization.</li>
+    <li><strong>Anthropic</strong> — premium AI text generation.</li>
+    <li><strong>Google Play / RevenueCat</strong> — subscription and payment processing.</li>
+    <li><strong>Expo</strong> — push notification delivery infrastructure.</li>
+  </ul>
+  <p>Each provider is subject to its own privacy policy.</p>
+
+  <h2>6. Data Retention and Deletion</h2>
+  <p>We retain your data for as long as it is necessary to provide the service. Sign-in logs
+  containing IP addresses are deleted after 30 days. You may request deletion of your account and
+  cloud data; contact us at the address below. Uninstalling the App deletes the local data on your
+  device.</p>
+
+  <h2>7. Your Rights (KVKK / GDPR)</h2>
+  <p>Under applicable law, you have the right to access your data, request its correction or
+  deletion, object to its processing, and receive a copy of your data. To exercise these rights,
+  contact us.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>Cold Focus is not directed at children under 13, and we do not knowingly collect data from
+  this age group.</p>
+
+  <h2>9. Security</h2>
+  <p>We transmit data over encrypted connections (HTTPS) and protect it with access controls.
+  While no method is 100% secure, we take reasonable measures to protect your data.</p>
+
+  <h2>10. Changes</h2>
+  <p>We may update this policy from time to time. We will announce significant changes in the App
+  or on this page. The current version is always published at this address.</p>
+
+  <h2>11. Contact</h2>
+  <p>For questions or requests:
+    <a href="mailto:coldfocusapp@gmail.com">coldfocusapp@gmail.com</a></p>
+
+  <hr>
+  <p class="meta">© 2026 Coldfocusapp. All rights reserved.</p>
+</main>
+</body>
+</html>
