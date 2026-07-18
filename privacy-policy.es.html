@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold Focus — Política de Privacidad</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0d1117; color:#e6edf3; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.65; }
+  main { max-width:760px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:1.7rem; margin:0 0 6px; }
+  h2 { font-size:1.15rem; margin:34px 0 10px; color:#5BC7E0; }
+  h3 { font-size:1rem; margin:20px 0 6px; }
+  p, li { color:#c3ccd6; }
+  a { color:#5BC7E0; }
+  .meta { color:#8b949e; font-size:.9rem; margin-bottom:28px; }
+  .note { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:14px 16px; margin:18px 0; font-size:.92rem; }
+  code { background:#161b22; padding:1px 6px; border-radius:5px; }
+  hr { border:none; border-top:1px solid #21262d; margin:36px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidad</h1>
+  <p class="meta">Aplicación móvil Cold Focus · Última actualización: 3 de julio de 2026</p>
+
+  <p>Esta Política de Privacidad explica cómo la aplicación <strong>Cold Focus</strong> ("la Aplicación",
+  "nosotros") recopila, utiliza y protege sus datos personales. Al usar la Aplicación, usted acepta esta
+  política. Cold Focus es ofrecida por su desarrollador <strong>Hasan Burak Erdin (Coldfocusapp)</strong>.</p>
+
+  <div class="note">
+    <strong>Resumen:</strong> Cold Focus es una aplicación de concentración <em>offline-first</em>. Las
+    funciones básicas funcionan sin conexión a internet. La sincronización en la nube es <strong>opcional</strong>
+    y está desactivada por defecto. No mostramos publicidad ni vendemos sus datos. No leemos el
+    <em>contenido</em> de sus otras aplicaciones.
+  </div>
+
+  <h2>1. Datos que recopilamos</h2>
+
+  <h3>a) Datos almacenados en el dispositivo (locales)</h3>
+  <ul>
+    <li><strong>Registros de sesiones de concentración:</strong> duración de la sesión, resultado
+      (completada/cancelada/interrumpida), nivel de dificultad, fecha y hora.</li>
+    <li><strong>Estado de progreso:</strong> nivel de identidad, racha (streak), crédito de recuperación.</li>
+    <li><strong>Sus preferencias:</strong> la lista de aplicaciones que elige bloquear, la elección de tono/actitud,
+      y las preferencias de dificultad y duración.</li>
+  </ul>
+  <p>Estos datos se guardan principalmente en su dispositivo y son necesarios para el funcionamiento de la Aplicación.</p>
+
+  <h3>b) Datos sincronizados con la nube (solo si la sincronización está activada)</h3>
+  <p>Si activa la sincronización en la nube, los siguientes datos se almacenan en nuestros servidores seguros
+  (Supabase):</p>
+  <ul>
+    <li>Identificador de cuenta anónimo (véase más abajo).</li>
+    <li>Resúmenes de sesiones de concentración (duración, resultado, dificultad, número de interrupciones,
+      fecha/hora local).</li>
+    <li>Información de perfil: estado premium, zona horaria, nivel de identidad, racha, token de notificaciones.</li>
+  </ul>
+  <p>Ninguno de estos datos incluye su nombre, número de teléfono ni el contenido de sus mensajes.</p>
+
+  <h3>c) Cuenta y autenticación</h3>
+  <ul>
+    <li><strong>Inicio de sesión anónimo:</strong> para usar las funciones en la nube se crea automáticamente
+      una cuenta anónima y sin nombre. No requiere información personal.</li>
+    <li><strong>Inicio de sesión con Google / Apple (opcional):</strong> para que su suscripción premium se
+      transfiera y se restaure entre dispositivos, puede vincular su cuenta con su identidad de Google o Apple.
+      En ese caso se obtienen del proveedor correspondiente su dirección de correo electrónico y un identificador
+      de usuario.</li>
+  </ul>
+
+  <h3>d) Datos técnicos recopilados automáticamente</h3>
+  <ul>
+    <li><strong>Dirección IP:</strong> se conserva temporalmente en los registros de autenticación por motivos
+      de seguridad de acceso y <strong>se elimina automáticamente en un plazo de 30 días.</strong></li>
+  </ul>
+
+  <h2>2. Permisos del dispositivo y sus finalidades</h2>
+  <p>Cold Focus solicita algunos permisos de Android para ofrecer la función de bloqueo durante la concentración.
+  Utilizamos los permisos únicamente para las siguientes finalidades:</p>
+  <ul>
+    <li><strong>Acceso al uso de aplicaciones (PACKAGE_USAGE_STATS):</strong> para detectar <em>en el dispositivo</em>
+      qué aplicación está en primer plano durante una sesión y bloquear las aplicaciones que usted haya marcado como
+      distractoras. Esta información <strong>no se envía fuera del dispositivo.</strong></li>
+    <li><strong>Mostrar sobre otras aplicaciones (SYSTEM_ALERT_WINDOW):</strong> para mostrar la pantalla de bloqueo
+      cuando intenta abrir una aplicación bloqueada.</li>
+    <li><strong>Servicio en primer plano y notificaciones:</strong> para mantener la sesión/el bloqueo activos y
+      mostrarle recordatorios.</li>
+    <li><strong>Sensor de movimiento (acelerómetro/giroscopio):</strong> para detectar si ha dejado el teléfono. Estos
+      datos se procesan únicamente en el dispositivo, no se almacenan ni se envían.</li>
+  </ul>
+  <p><strong>No leemos</strong> el contenido de sus otras aplicaciones, sus mensajes ni sus archivos personales.</p>
+
+  <h2>3. Contenido generado por inteligencia artificial (Premium)</h2>
+  <p>En la suscripción premium, textos como el análisis personal de concentración, el plan de concentración y el
+  resumen de fin de día se generan con inteligencia artificial. Para esta función:</p>
+  <ul>
+    <li>No se transmiten sus datos en bruto, sino <strong>estadísticas resumidas y calculadas</strong> (por ejemplo,
+      tiempo total de concentración, frecuencia de sesiones, tendencia) a nuestro proveedor de inteligencia artificial
+      <strong>Anthropic (Claude)</strong>.</li>
+    <li>Los datos enviados no incluyen su nombre ni su identidad.</li>
+    <li>Anthropic procesa estos datos únicamente para generar la respuesta; no se utilizan para entrenar modelos.</li>
+  </ul>
+
+  <h2>4. Pagos</h2>
+  <p>Las suscripciones premium se procesan a través de <strong>Google Play</strong> (y, en el futuro, la App Store de
+  Apple), mediante nuestra plataforma de suscripciones <strong>RevenueCat</strong>. <strong>No vemos ni almacenamos</strong>
+  sus datos de tarjeta o de pago; estos son procesados por la tienda correspondiente. Solo recibimos la información de si
+  su suscripción está activa o no.</p>
+
+  <h2>5. Servicios de terceros</h2>
+  <ul>
+    <li><strong>Supabase</strong> — base de datos en la nube, autenticación y sincronización.</li>
+    <li><strong>Anthropic</strong> — textos premium de inteligencia artificial.</li>
+    <li><strong>Google Play / RevenueCat</strong> — procesamiento de suscripciones y pagos.</li>
+    <li><strong>Expo</strong> — infraestructura de envío de notificaciones (push).</li>
+  </ul>
+  <p>Cada proveedor se rige por su propia política de privacidad.</p>
+
+  <h2>6. Conservación y eliminación de datos</h2>
+  <p>Conservamos sus datos mientras sea necesario para prestar el servicio. Los registros de acceso que contienen la IP
+  se eliminan a los 30 días. Puede solicitar la eliminación de su cuenta y de sus datos en la nube; cómo hacerlo se
+  explica en la página <a href="data-deletion.es.html">Eliminación de cuenta y datos</a>. Desinstalar la Aplicación
+  elimina los datos locales del dispositivo.</p>
+
+  <h2>7. Sus derechos (RGPD / KVKK)</h2>
+  <p>De acuerdo con la normativa aplicable, usted tiene derecho a acceder a sus datos, solicitar su rectificación o
+  eliminación, oponerse a su tratamiento y obtener una copia de sus datos. Para ejercer estos derechos, póngase en
+  contacto con nosotros.</p>
+
+  <h2>8. Privacidad de los menores</h2>
+  <p>Cold Focus no está dirigida a menores de 13 años y no recopilamos conscientemente datos de este grupo de edad.</p>
+
+  <h2>9. Seguridad</h2>
+  <p>Transmitimos los datos a través de conexiones cifradas (HTTPS) y los protegemos con controles de acceso. Aunque
+  ningún método es 100 % seguro, adoptamos medidas razonables para proteger sus datos.</p>
+
+  <h2>10. Cambios</h2>
+  <p>Podemos actualizar esta política de vez en cuando. Anunciaremos los cambios importantes dentro de la Aplicación o en
+  esta página. La versión vigente siempre se publica en esta dirección.</p>
+
+  <h2>11. Contacto</h2>
+  <p>Para preguntas o solicitudes:
+    <a href="mailto:coldfocusapp@gmail.com">coldfocusapp@gmail.com</a></p>
+
+  <hr>
+  <p class="meta">© 2026 Coldfocusapp. Todos los derechos reservados.</p>
+</main>
+</body>
+</html>

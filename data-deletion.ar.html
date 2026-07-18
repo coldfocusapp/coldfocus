@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold Focus — حذف الحساب والبيانات</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0d1117; color:#e6edf3; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.8; }
+  main { max-width:760px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:1.7rem; margin:0 0 6px; }
+  h2 { font-size:1.15rem; margin:34px 0 10px; color:#5BC7E0; }
+  h3 { font-size:1rem; margin:20px 0 6px; }
+  p, li { color:#c3ccd6; }
+  a { color:#5BC7E0; }
+  .meta { color:#8b949e; font-size:.9rem; margin-bottom:28px; }
+  .note { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:14px 16px; margin:18px 0; font-size:.92rem; }
+  ol li { margin:6px 0; }
+  hr { border:none; border-top:1px solid #21262d; margin:36px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>طلب حذف الحساب والبيانات</h1>
+  <p class="meta">تطبيق Cold Focus للهواتف المحمولة · آخر تحديث: 3 يوليو 2026</p>
+
+  <p>توضّح هذه الصفحة كيفية حذف حسابك والبيانات المرتبطة به في تطبيق <strong>Cold Focus</strong>. يُقدَّم Cold Focus
+  من مطوّره <strong>Hasan Burak Erdin (Coldfocusapp)</strong>.</p>
+
+  <div class="note">
+    <strong>باختصار:</strong> Cold Focus تطبيق يعمل <em>دون اتصال أولاً (offline-first)</em>، ومعظم بياناتك تبقى على
+    جهازك فقط. إلغاء تثبيت التطبيق يحذف جميع البيانات المحلية على الجهاز. وإذا كنت قد استخدمت المزامنة السحابية، فيمكنك
+    أيضًا حذف بياناتك من الخادم بالطرق التالية.
+  </div>
+
+  <h2>1. حذف البيانات المحلية (على الجهاز)</h2>
+  <p>تُحفظ سجلات جلسات التركيز وحالة التقدّم وتفضيلاتك في المقام الأول على جهازك. لحذفها:</p>
+  <ol>
+    <li><strong>ألغِ تثبيت</strong> التطبيق من هاتفك، أو</li>
+    <li>اتّبع الخطوات في Android: <strong>الإعدادات ← التطبيقات ← Cold Focus ← التخزين ← مسح البيانات.</strong></li>
+  </ol>
+  <p>يحذف هذا الإجراء جميع البيانات المحلية على الجهاز نهائيًا.</p>
+
+  <h2>2. حذف الحساب السحابي وبيانات الخادم</h2>
+  <p>إذا فعّلت المزامنة السحابية، فيمكنك تقديم طلب لحذف معرّف حسابك المجهول، وملخّصات جلساتك، ومعلومات ملفك الشخصي المخزّنة
+  على خوادمنا (Supabase).</p>
+
+  <h3>كيفية تقديم الطلب</h3>
+  <p>أرسل رسالة إلى <strong>coldfocusapp@gmail.com</strong> واجعل موضوع الرسالة <strong>"حذف الحساب"</strong>. ولكي نتمكّن
+  من التحقّق من طلبك، اكتب — إن أمكن — من <strong>عنوان بريد Google / Apple</strong> الذي ربطت به حسابك، أو أضف معرّف
+  الحساب الظاهر في شاشة <strong>الإعدادات</strong> داخل التطبيق.</p>
+  <p style="margin-top:10px">
+    <a href="mailto:coldfocusapp@gmail.com?subject=%D8%AD%D8%B0%D9%81%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8&amp;body=%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%20%D9%81%D9%8A%20Cold%20Focus%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%D9%8A%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9.">
+      ← إنشاء بريد طلب الحذف</a>
+  </p>
+
+  <h2>3. البيانات التي تُحذف</h2>
+  <ul>
+    <li>معرّف حسابك المجهول.</li>
+    <li>ملخّصات جلسات تركيزك (المدة، النتيجة، الصعوبة، عدد المخالفات، التاريخ/الوقت المحلي).</li>
+    <li>معلومات ملفك الشخصي (حالة الاشتراك المميّز، المنطقة الزمنية، مستوى الهوية، السلسلة، رمز الإشعارات).</li>
+  </ul>
+  <p><strong>ملاحظة:</strong> يُدار <strong>الاشتراك</strong> النشط من قِبل المتجر المعني (Google Play / App Store)؛ وحذف
+  الحساب لا يلغي الاشتراك تلقائيًا. عليك إلغاء اشتراكك بشكل منفصل من إعدادات الاشتراك في المتجر. كما قد تُحتفَظ بعض سجلات
+  المعاملات/الدفع لدى المتجر بموجب الالتزامات القانونية.</p>
+
+  <h2>4. المدة</h2>
+  <p>بعد استلام طلبك، نتحقّق من هويتك ونحذف بياناتك السحابية <strong>خلال 30 يومًا كحد أقصى</strong>. أما سجلات المصادقة
+  التي تحتوي على IP والمحفوظة لأغراض أمنية، فتُحذف تلقائيًا <strong>خلال 30 يومًا.</strong></p>
+
+  <h2>5. التواصل</h2>
+  <p>للأسئلة: <a href="mailto:coldfocusapp@gmail.com">coldfocusapp@gmail.com</a><br>
+  يمكنك أيضًا الاطلاع على صفحتَي <a href="privacy-policy.ar.html">سياسة الخصوصية</a> و
+  <a href="terms-of-service.ar.html">شروط الاستخدام</a>.</p>
+
+  <hr>
+  <p class="meta">© 2026 Coldfocusapp. جميع الحقوق محفوظة.</p>
+</main>
+</body>
+</html>
